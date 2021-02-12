@@ -10,7 +10,7 @@
 
 (function() {
     'use strict';
-    var extBase = 'https://app.kendra.io/coil/callback?';
-    window.location.href='http://localhost:4200/examples/basicPlayerWebMoney?' + window.location.href.replace(extBase, '');
+    var extBase = 'https://app.kendra.io/';
+    window.location.href='http://localhost:4200/' + window.location.href.replace(extBase, '');
 
 })();
