@@ -1,16 +1,17 @@
-Kendraio Coil API Proxy
+Kendraio Uphold Oauth API Proxy
 ---
 
-A prototype Oauth proxy for BTP token retrival, to facilate Web Monetization payments on behalf of Coil.com users.
-Uses Kendraio's secret Oauth key and client ID key to help confirm our identity as an Oauth service acting on behalf of the user, and get's the BTP token for the user, which lasts half an hour.
-Currently refreshing stale tokens is not yet implemented.
+A Oauth proxy / middleware to help Uphold.com users authenticate, so they can make cards and list balances.
+
+Uses Kendraio's secret Oauth key and client ID key to help confirm our identity as an Oauth service acting on behalf of the user, and get's the Oauth token for the user.
 
 It is expected that this could be deloyed to Vercel, a hosted 'serverless' service.
 
-Configure COIL_CLIENT_ID and COIL_CLIENT_SECRET environment variables before deployments.
+Configure environment variables before deployments:
 
-If testing locally, CORS proxy can be enabled by setting a DEBUG environment variable to 'true'.
+- [ ] API_URL
+- [ ] CLIENT_ID
+- [ ] CLIENT_SECRET
+- [ ] ALLOW_ORIGIN
 
-Additionally, since we specified an Oauth callback to kendra.io with no localhost for development or testing, a UserScript (which could be ran by a Tampermonkey browser extension) was used during development.
-
-See debugging/kendraio-coil-callback-redirect.user.js
+Wildcard CORS should be enabled by setting ALLOW_ORIGIN environment variable to 'true'.
