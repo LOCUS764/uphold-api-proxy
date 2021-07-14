@@ -1,4 +1,4 @@
-if (process.env.DEBUG==='true') {
+if (process.env.ALLOW_ORIGIN==='true') {
 
   module.exports = {
     async headers() {
