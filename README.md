@@ -9,9 +9,7 @@ It is expected that this could be deloyed to Vercel, a hosted 'serverless' servi
 
 Configure environment variables before deployments:
 
-- [ ] API_URL
+- [ ] API_URL - production: https://api.uphold.com/oauth2/token sandbox: https://api-sandbox.uphold.com/oauth2/token
 - [ ] CLIENT_ID
 - [ ] CLIENT_SECRET
-- [ ] ALLOW_ORIGIN
-
-Wildcard CORS should be enabled by setting ALLOW_ORIGIN environment variable to 'true'.
+- [ ] ALLOW_ORIGIN - true to enable wildcard CORS.
