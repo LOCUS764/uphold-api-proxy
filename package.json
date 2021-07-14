@@ -1,5 +1,5 @@
 {
-  "name": "webmoney-auth-agent",
+  "name": "uphold-api-proxy",
   "scripts": {
     "dev": "next",
     "build": "next build",
